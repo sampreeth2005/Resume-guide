@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="styles/signup.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="signup">
+      <h2>Sign up</h2>
+      <form class="signupForm">
+        <div class="entries">
+          <div class="entryComponent">
+            <p>Username</p>
+            <input type="text" class="userName entry" placeholder="Username" />
+          </div>
+          <div class="entryComponent">
+            <p>Email</p>
+            <input type="email" class="email entry" placeholder="Email" />
+          </div>
+          <div class="entryComponent">
+            <p>Password</p>
+            <input type="password" class="pwd entry" placeholder="Password" />
+          </div>
+          <div class="entryComponent">
+            <p>Confirm Password</p>
+            <input
+              type="password"
+              class="confirmpwd entry"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <div class="check">
+            <input type="checkbox" class="checkbox" />
+            <p class="tc">I agree with Terms & Conditions and Privacy Policy</p>
+          </div>
+        </div>
+        <div class="btns">
+          <button class="signUpBtn btn">Sign up</button>
+          <p>Or</p>
+          <button class="signUpGoogle btn">Sign up with Google</button>
+        </div>
+        <div class="loginDiv">
+          <p>Already have an account?</p>
+          <a class="loginLink" href="login.html">Login</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

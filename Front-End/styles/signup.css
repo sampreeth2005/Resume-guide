@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: white;
+  --fontPrimaryAccent: black;
+  --fontSecondaryAccent: #1d1e23;
+  --buttonPrimaryAccent: #748ffc;
+  --buttonHoverAccent: #5c7cfa;
+}
+
+[data-theme="dark"] {
+  /* --bg: white;
+  --fontPrimaryAccent: black;
+  --fontSecondaryAccent: #1d1e23;
+  --buttonPrimaryAccent: #748ffc;
+  --buttonHoverAccent: #5c7cfa; */
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Ysabeau Office", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.signup,
+.signupForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.signupForm {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.entries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.entry {
+  height: 55px;
+  width: 360px;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.301);
+  transition: all 0.15s ease;
+}
+
+.entry::placeholder {
+  font-family: "Ysabeau Office", sans-serif;
+  font-size: 18px;
+}
+
+.entry:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 8px 4px #5c7cfa96;
+}
+
+.entry:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.15);
+}
+
+.check {
+  display: flex;
+  gap: 2px;
+}
+
+.checkbox {
+  background-color: #b9c8ff;
+}
+
+.tc {
+  color: var(--fontSecondaryAccent);
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btns p {
+  text-align: center;
+}
+
+.btn {
+  height: 45px;
+  width: 360px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--buttonPrimaryAccent);
+  font-size: 20px;
+  color: rgba(233, 236, 239, 0.9);
+  font-weight: 500;
+  transition: all 0.1s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: translateY(-0.5rem);
+  background-color: var(--buttonHoverAccent);
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+.loginDiv {
+  display: flex;
+  gap: 5px;
+}
+
+.loginLink {
+  text-decoration: none;
+  color: var(--buttonHoverAccent);
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+
+.loginLink:hover {
+  transform: translateY(-0.3rem);
+}
