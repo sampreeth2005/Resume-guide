@@ -9,9 +9,13 @@ themetoggle.addEventListener("click", () => {
   }
 });
 
+//toggle signupAnimation
 const signupButton = document.querySelector(".signupBtn");
 const signupPanel = document.querySelector(".signup");
+const resumeAnimation = document.querySelector(".tempResume");
+
 signupButton.addEventListener("click", () => {
   console.log("Clicking...");
   signupPanel.classList.add("active");
+  resumeAnimation.style.display = "none";
 });

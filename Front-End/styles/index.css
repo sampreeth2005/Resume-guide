@@ -5,11 +5,14 @@
 
 :root {
   --bg: white;
+  --primaryColorLight: #c3fae8;
   --font: black;
-  --bgcolor: rgba(128, 128, 128, 0.453);
+  --bgcolor: #c3fae8;
   --slcolor: black;
-  --pshadow: rgba(0, 0, 0, 0.404);
+  --pshadow: rgba(0, 0, 0, 0.2);
   --rbox: solid black;
+  --hoverColor: #20c997;
+  --secondaryAccent: #087f5b;
 }
 
 [data-theme="dark"] {
@@ -28,6 +31,8 @@ html {
 body {
   background-color: var(--bg);
   color: var(--font);
+  font-family: "Poppins", sans-serif;
+
   /* display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,7 +59,8 @@ body {
 }
 
 h1 {
-  font-style: Jacques Francois Shadow;
+  font-family: "Lobster", sans-serif;
+
   font-size: 8rem;
   /* width: 50rem; */
 }
@@ -80,14 +86,21 @@ h1 {
   /* background-color: rgba(128, 128, 128, 0.692);
     border-radius: 5px; */
   text-decoration: none;
+  font-weight: 300;
   color: var(--font);
+  padding: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition: all 0.15s ease;
+  font-size: 1.5rem;
 }
 
 .navigation a:hover {
-  border-radius: 3px;
-  height: 1.8rem;
+  border-radius: 25px;
+  font-weight: 400;
   width: auto;
-  background-color: rgba(128, 128, 128, 0.41);
+  color: var(--secondaryAccent);
+  /* background-color: var(--hoverColor); */
   transform: scale(1.18);
 }
 
@@ -141,6 +154,17 @@ main {
   justify-content: center;
 }
 
+.tempResume {
+  position: absolute;
+  top: 15rem;
+  right: 10rem;
+  transition: all 0.2s ease;
+}
+
+.tempResume:hover {
+  transform: rotate(15deg) scale(1.2);
+}
+
 .holder p {
   width: 20rem;
 }
@@ -148,7 +172,7 @@ main {
 .slbparent {
   color: var(--slcolor);
   border-radius: 10px;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   height: 14rem;
   width: 15rem;
   display: flex;
@@ -159,6 +183,11 @@ main {
 
 .slbox {
   text-align: center;
+}
+
+.btn {
+  background-color: var(--secondaryAccent) !important;
+  padding: 15px !important;
 }
 
 /*                about box           */
@@ -301,24 +330,29 @@ main {
 
 .pbox {
   display: flex;
+  align-items: center;
+
   gap: 1.5rem;
 }
 
 .card {
-  box-shadow: 0 0 4px 4px var(--pshadow);
+  box-shadow: 0 0 10px 4px var(--pshadow);
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: space-evenly;
-  background-color: rgba(173, 216, 230, 0.904);
+  background-color: var(--bgcolor);
   width: 20rem;
   height: 25rem;
   padding: 1rem;
+  transition: all 0.15s ease;
 }
 
 .card-yearly {
-  transform: scale(1.05);
+  width: 22rem;
+  height: 28rem;
 }
 
 .monthly {
@@ -326,39 +360,62 @@ main {
   transition: all 0.15s ease;
 }
 
-.card:hover,
-.card-yearly:hover,
-.monthly:hover {
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.382);
+.card:hover {
+  box-shadow: 0 0 10px 6px var(--pshadow);
   border-radius: 10px;
   /* transform: scale(1.05); */
   transform: translateY(-1.75rem);
 }
 
+.cardTitle {
+  font-weight: 400;
+  font-size: 38px;
+}
+
 .cost {
   display: flex;
   align-items: end;
-  gap: 4px;
+  gap: 3px;
+}
+
+.cost h5 {
+  font-weight: 550;
 }
 
 .cost h7 {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .feature {
   font-size: 1rem;
 }
 
+.line {
+  width: 18rem;
+  height: 0.3px;
+  background-color: rgba(93, 93, 93, 0.5);
+}
+
 .adv {
   align-items: center;
+  font-size: 1.1rem;
 }
 
 .button {
   color: whitesmoke;
-  height: 2rem;
-  width: 5rem;
+  height: 2.5rem;
+  width: 7rem;
+  font-size: 1rem;
   border-radius: 8px;
-  background-color: blue;
+  background-color: var(--secondaryAccent);
+  outline: none;
+  border: none;
+  transition: all 0.15s ease;
+}
+
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
 }
 
 form {
