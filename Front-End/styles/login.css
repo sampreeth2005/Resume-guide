@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #f5f7ff;
+}
+
+/*main*/
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/*l panel*/
+.left-panel {
+  width: 45%;
+  background: #cfd9ff;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-panel img {
+  width: 120px;
+  margin-bottom: 30px;
+}
+
+.left-panel h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.left-panel p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.left-panel button {
+  width: fit-content;
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  color: #46bcff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/*rpanel*/
+.right-panel {
+  width: 55%;
+  background: white;
+  padding: 80px 100px;
+}
+
+.right-panel h2 {
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+label {
+  font-size: 14px;
+  color: #444;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus {
+  border-color: #6c8cff;
+}
+
+/*remember row*/
+.right-panel > form > div:first-of-type {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #5b7cff;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background: #5b7cff;
+  color: white;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background: #4a68e0;
+}
+
+/*google login*/
+.right-panel button:last-of-type {
+  background: #e8edff;
+  color: #333;
+  margin-top: 15px;
+}
+
+/*bottom text*/
+.right-panel p {
+  text-align: center;
+  margin: 15px 0;
+  color: #777;
+}
